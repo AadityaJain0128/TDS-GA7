@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Q3 2025 Financial Institution - Earnings Report</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/serif.css" id="theme" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Quarterly Earnings Report</h2>
+          <h3>Q3 2025</h3>
+          <p>Presented by: Technical Consultant</p>
+          <p><small>Contact: <a href="mailto:23f2003550@ds.study.iitm.ac.in">23f2003550@ds.study.iitm.ac.in</a></small></p>
+          <aside class="notes">
+            Welcome everyone. Today, we'll review the strong performance from the third quarter of 2025 and discuss our outlook.
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Agenda & Key Takeaways
+            - Financial Highlights & Performance
+            - Segment-wise Revenue Analysis
+            - Growth Drivers & Strategic Initiatives
+            - Technical Appendix: Formulas & Code
+            - Outlook for Q4 2025
+
+            ---
+
+            ### Key Takeaways
+            1. Record revenue growth this quarter.
+            2. Successful launch of new digital banking platform.
+            3. Stronger profit margins due to operational efficiencies.
+          </textarea>
+          <aside class="notes">
+            This slide, written in Markdown, provides a quick overview. We'll cover our financial performance, strategic wins, and the technical models behind our analysis. The key message is that we had a very successful quarter.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Q3 Financial Highlights</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="1"><strong>Total Revenue:</strong> $1.2B (Up 15% YoY)</li>
+            <li class="fragment" data-fragment-index="2"><strong>Net Profit:</strong> $250M (Up 22% YoY)</li>
+            <li class="fragment" data-fragment-index="3"><strong>Earnings Per Share (EPS):</strong> $1.45 (Up 25% YoY)</li>
+            <li class="fragment fade-up" data-fragment-index="4"><strong>New Customer Acquisition:</strong> 500,000+</li>
+          </ul>
+          <aside class="notes">
+            Let's break down the numbers. Each of these key metrics shows significant year-over-year growth. I want to draw special attention to the EPS, which indicates strong shareholder value. The fade-up animation on the last point emphasizes our impressive customer growth.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Technical Appendix: Data Processing</h2>
+          <p>Python script used for portfolio risk analysis.</p>
+          <pre><code class="python" data-line-numbers="1-3|5-7|9-10">
+import pandas as pd
+import numpy as np
+
+# Load transaction data from Q3
+portfolio_data = pd.read_csv('q3_portfolio.csv')
+
+# Calculate Value at Risk (VaR) using Monte Carlo simulation
+returns = portfolio_data['returns'].pct_change()
+var_95 = np.percentile(returns.dropna(), 5)
+
+print(f"95% Value at Risk (VaR): {var_95:.2%}")
+          </code></pre>
+          <aside class="notes">
+            For the technical stakeholders, here's a glimpse of our process. We use Python with libraries like Pandas. First, we load the data. Then, we run simulations to calculate key risk metrics like Value at Risk. Finally, we output the result. This ensures our risk assessments are data-driven.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Technical Appendix: Growth Formula</h2>
+          <p>We use the Compound Annual Growth Rate (CAGR) to model long-term performance.</p>
+          <p>The formula is:</p>
+          \[ \text{CAGR} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{n}}} - 1 \]
+          <p>Where:</p>
+          <ul>
+            <li>$n$ = Number of Years</li>
+          </ul>
+          <aside class="notes">
+            The CAGR formula is central to how we project future earnings and evaluate past performance over multiple periods. This standard financial equation helps us smooth out volatility and see the bigger picture.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Q&A</h2>
+          <h3>Thank You</h3>
+          <p>Open for questions.</p>
+          <p><small>Contact: <a href="mailto:23f2003550@ds.study.iitm.ac.in">23f2003550@ds.study.iitm.ac.in</a></small></p>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/config/
+      // - https://revealjs.com/plugins/
+      Reveal.initialize({
+        hash: true,
+        history: true,
+        controls: true,
+        progress: true,
+        slideNumber: 'c/t',
+
+        // All plugins must be added to the array
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3],
+      });
+    </script>
+  </body>
+</html>
