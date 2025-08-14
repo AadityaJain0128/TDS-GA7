@@ -33,8 +33,8 @@ header, footer {
 </style>
 
 <!-- 
-_backgroundImage: "url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80')"
-_color: white
+backgroundImage: "url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80')"
+color: white
 -->
 
 <!-- Slide 1: Title Slide -->
