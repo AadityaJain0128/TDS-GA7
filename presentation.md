@@ -1,11 +1,41 @@
 ---
 marp: true
-theme: serif
+theme: custom-theme
 size: 16:9
 paginate: true
 header: 'Q3 2025 Earnings Report'
 footer: 'Confidential & Proprietary'
 ---
+
+<style>
+/* @theme custom-theme */
+
+section {
+  background-color: #f0f4f8;
+  color: #1a202c;
+  font-family: 'Georgia', serif;
+  padding: 60px;
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #2a4365;
+}
+
+a {
+  color: #3182ce;
+}
+
+header, footer {
+  color: #a0aec0;
+  font-size: 0.8em;
+}
+</style>
+
+<!-- 
+_backgroundImage: "url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80')"
+_color: white
+-->
 
 <!-- Slide 1: Title Slide -->
 # Quarterly Earnings Report
@@ -90,19 +120,16 @@ Speaker Notes: For the technical stakeholders, here's a glimpse of our process. 
 ---
 
 <!-- Slide 6: Mathematical Equation -->
-## Technical Appendix: Growth Formula
+## Technical Appendix: Algorithmic Complexity
 
-We use the Compound Annual Growth Rate (CAGR) to model long-term performance. The formula is:
+We analyze algorithm performance using Big O notation to ensure scalability.
 
-$$
-\text{CAGR} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{n}}} - 1
-$$
-
-Where:
-- $n$ = Number of Years
+- **Constant Time:** $$ O(1) $$
+- **Linear Time:** $$ O(n) $$
+- **Quadratic Time:** $$ O(n^2) $$
 
 <!--
-Speaker Notes: The CAGR formula is central to how we project future earnings. Marp uses KaTeX to render math formulas beautifully using the $$ syntax.
+Speaker Notes: We prioritize algorithms with lower complexity, ideally linear or constant time, to ensure our systems remain efficient as data volume grows.
 -->
 
 ---
