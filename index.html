@@ -1,173 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>Q3 2025 Earnings Report - Innovate Finance Inc.</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/sky.css" id="theme">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Q3 2025 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/sky.css" id="theme" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
-
             <section>
-                <h1>Innovate Finance Inc.</h1>
-                <h3>Quarterly Earnings Report</h3>
-                <p>Q3 2025</p>
+                <h1>Q3 2025 Earnings Report</h1>
+                <p>ACME Financial Corp.</p>
                 <br>
-                <p><small>Presented by: Technical Consulting Division</small></p>
-                <aside class="notes">
-                    Welcome everyone to our Q3 2025 earnings call. Today, we'll cover our financial performance, key operational metrics, and our outlook for the next quarter. We're excited to share some strong results and demonstrate the technology driving our success.
-                </aside>
+                <p><small>Prepared by: Technical Consulting Division</small></p>
+                <p><small>Contact: 23f2003550@ds.study.iitm.ac.in</small></p>
             </section>
 
             <section>
                 <h2>Agenda</h2>
-                <ol>
-                    <li>Q3 Financial Highlights</li>
-                    <li>Deep Dive: Key Performance Metrics</li>
-                    <li>Technological Advancements</li>
-                    <li>Financial Modeling & Projections</li>
-                    <li>Q&A and Forward Outlook</li>
-                </ol>
-                <aside class="notes">
-                    Here's our roadmap for today's presentation. We'll start with the headline numbers, then drill down into the metrics driving those results. We'll also showcase a key tech initiative before moving on to our future projections.
-                </aside>
-            </section>
-
-            <section>
-                <h2>Q3 Financial Highlights</h2>
-                <p>(All figures compared to Q3 2024)</p>
                 <ul>
-                    <li class="fragment fade-up"><strong>Total Revenue:</strong> $150M <span style="color: green;">(↑ 15%)</span></li>
-                    <li class="fragment fade-up"><strong>Net Income:</strong> $25M <span style="color: green;">(↑ 20%)</span></li>
-                    <li class="fragment fade-up"><strong>Earnings Per Share (EPS):</strong> $1.25 <span style="color: green;">(↑ 18%)</span></li>
-                    <li class="fragment highlight-blue"><strong>Operating Margin:</strong> 22% <span style="color: green;">(↑ 200 bps)</span></li>
+                    <li class="fragment">Q3 Financial Highlights</li>
+                    <li class="fragment">Key Performance Metrics</li>
+                    <li class="fragment">Technical Analysis of Market Trends</li>
+                    <li class="fragment">Forward Outlook & Strategy</li>
+                    <li class="fragment">Q&A</li>
                 </ul>
-                <aside class="notes">
-                    Let's begin with the top-line numbers.
-                    (Click 1) We saw robust revenue growth of 15%, driven by new product adoption.
-                    (Click 2) This translated into a strong 20% increase in net income.
-                    (Click 3) And an 18% increase in EPS, delivering significant value to our shareholders.
-                    (Click 4) Importantly, our operating margin expanded by 200 basis points, showing improved efficiency across the board. This is a key highlight for this quarter.
-                </aside>
             </section>
 
             <section data-markdown>
-                <script type="text/template">
-                    ## Deep Dive: Key Performance Metrics
+                <textarea data-template>
+                    ## Q3 Financial Highlights
+                    A strong quarter demonstrating significant growth.
 
-                    Our growth is underpinned by strong user engagement and efficient marketing.
-
-                    | Metric | Q3 2024 | Q3 2025 | Change |
-                    |---|---|---|---|
-                    | Monthly Active Users (MAU) | 4.2 M | 5.1 M | +21% |
-                    | Customer Acquisition Cost (CAC) | $55 | $52 | -5.5% |
-                    | Lifetime Value (LTV) | $180 | $210 | +16.7% |
-
-                    The LTV/CAC ratio has improved to **4.04**, a very healthy indicator of sustainable growth.
-                </script>
-                <aside class="notes">
-                    Now let's go beyond the financial statements.
-                    Our user base continues to expand rapidly, with Monthly Active Users up 21%.
-                    At the same time, our marketing has become more efficient, as shown by the decrease in Customer Acquisition Cost.
-                    Most importantly, the Lifetime Value of our customers is increasing. This combination leads to an excellent LTV to CAC ratio of over 4, a core driver of our long-term profitability.
-                </aside>
+                    - **Revenue:** $5.2 Billion (+15% YoY)
+                    - **Net Income:** $1.1 Billion (+22% YoY)
+                    - **Earnings Per Share (EPS):** $2.45 (+25% YoY)
+                </textarea>
             </section>
 
             <section>
-                <h2>Technological Advancements</h2>
-                <p>We've deployed a new Python-based risk model for portfolio analysis.</p>
-                <pre><code class="python" data-line-numbers="3-5|8-10">
-import numpy as np
-
-def calculate_portfolio_volatility(weights, returns_df):
-    # Calculate daily returns covariance matrix
-    cov_matrix = returns_df.cov() * 252 # Annualize
-    
-    # Calculate portfolio variance
-    port_variance = np.dot(weights.T, np.dot(cov_matrix, weights))
-    
-    # Calculate portfolio volatility (standard deviation)
-    port_volatility = np.sqrt(port_variance)
-    return port_volatility
-
-# Example: 40% stock A, 60% stock B
-weights = np.array([0.4, 0.6])
-# returns_df would be a pandas DataFrame of asset returns
-                </code></pre>
-                <aside class="notes">
-                    On the technology front, our innovation continues to provide a competitive edge. This quarter, we rolled out a new risk model. Here's a simplified code snippet.
-                    (Click 1) The core logic calculates the annualized covariance of asset returns.
-                    (Click 2) It then applies the portfolio weights to determine overall portfolio variance and finally volatility.
-                    This new model is 30% faster and allows for more complex scenario analysis, directly improving our risk management capabilities.
-                </aside>
-            </section>
-
-            <section>
-                <h2>Financial Modeling & Projections</h2>
-                <p>Our project valuation models are based on standard financial principles.</p>
-                
-                <h4>Net Present Value (NPV)</h4>
-                <p>We use NPV to evaluate the profitability of new ventures:</p>
-                $$ NPV = \sum_{t=1}^{n} \frac{CF_t}{(1 + r)^t} - C_0 $$
-                
-                <div class="fragment" style="margin-top: 20px;">
-                    <h4>Compound Annual Growth Rate (CAGR)</h4>
-                    <p>To measure long-term performance:</p>
-                    $$ CAGR = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{n}} - 1 $$
-                </div>
-
-                <aside class="notes">
-                    Looking forward, our capital allocation strategy is disciplined and data-driven. Our primary tool for evaluating new projects is the Net Present Value formula, which allows us to discount future cash flows back to today's value.
-                    (Click 1) We also use CAGR extensively to smooth out volatility and understand the true annual growth rate of our key metrics over time. These tools ensure we invest in projects that create real, quantifiable value.
-                </aside>
+                <h2>Key Performance Metrics</h2>
+                <p>Our Earnings Per Share (EPS) calculation reflects robust profitability:</p>
+                <p>
+                    \[ EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Shares Outstanding}} \]
+                </p>
+                <p>This metric is crucial for evaluating our per-share profitability for stakeholders.</p>
             </section>
             
             <section>
-                <h2>Q&A and Forward Outlook</h2>
-                <p>We are opening the floor for questions.</p>
-                <br>
-                <p>For further inquiries and a digital copy of this report, please contact:</p>
-                <p>23f2003550@ds.study.iitm.ac.in</p>
+                <h2>Technical Analysis Script</h2>
+                <p>Python script used for trend analysis this quarter.</p>
+                <pre><code class="python" data-line-numbers="1-2|4-5|7-9">
+import pandas as pd
+import yfinance as yf
+
+# Fetch quarterly stock data for ACME
+acme_ticker = yf.Ticker("ACME")
+q3_data = acme_ticker.history(period="3mo")
+
+# Calculate 50-day moving average
+q3_data['MA50'] = q3_data['Close'].rolling(window=50).mean()
+print(q3_data.tail())
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Forward Outlook</h2>
+                <p>We are optimistic about Q4 and the upcoming fiscal year.</p>
+                <ul>
+                    <li>Focus on expanding into emerging markets.</li>
+                    <li>Investment in AI-driven analytics.</li>
+                    <li>Continued commitment to shareholder value.</li>
+                </ul>
                 <aside class="notes">
-                    That concludes our prepared remarks for Q3. We are optimistic about Q4 and are projecting continued growth in both revenue and user engagement. We will now take your questions.
+                    Good morning everyone. On this slide, I want to emphasize our forward-looking strategy.
+                    First, highlight the aggressive but strategic plan for market expansion.
+                    Second, mention the specific amount of capital allocated to our new AI initiatives.
+                    Finally, reassure stakeholders that our core mission remains to maximize their returns.
                 </aside>
             </section>
 
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/notes/notes.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/markdown/markdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/highlight/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/math/math.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
     <script>
-        // Full list of config options: https://revealjs.com/config/
         Reveal.initialize({
             hash: true,
-            // Display presentation control arrows
+            plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+            // Other configuration options
             controls: true,
-            // Help the user learn the controls by providing hints
-            help: true,
-            // Display a presentation progress bar
             progress: true,
-            // Push each slide change to the browser history
             history: true,
-
-            // Activate plugins
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+            center: true,
+            transition: 'convex', // 'slide', 'fade', 'zoom', etc.
         });
     </script>
 </body>
 </html>
-
