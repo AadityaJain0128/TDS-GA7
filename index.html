@@ -1,106 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Q3 2025 Earnings Report</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/sky.css" id="theme" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Q3 2025 Earnings Report - FinTech Innovations Inc.</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/league.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
             <section>
-                <h2>Q3 2025 Earnings Report</h2>
-                <p>ACME Financial Corp.</p>
-                <br>
-                <p>Prepared by: Technical Consulting Division</p>
-                <p>Contact: (23f2003550@ds.study.iitm.ac.in)</p>
-            </section>
-
-            <section>
-                <h2>Agenda</h2>
-                <ul>
-                    <li class="fragment">Q3 Financial Highlights</li>
-                    <li class="fragment">Key Performance Metrics</li>
-                    <li class="fragment">Technical Analysis of Market Trends</li>
-                    <li class="fragment">Forward Outlook & Strategy</li>
-                    <li class="fragment">Q&A</li>
-                </ul>
+                <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_272x92dp.svg" alt="Company Logo" style="height: 100px; border: none; background: none; box-shadow: none;">
+                <h3>FinTech Innovations Inc.</h3>
+                <h1>Q3 2025 Earnings Report</h1>
+                <p>
+                    <small>Presented by: Technical Consultant</small><br>
+                    <small>Contact: <a href="mailto:23f2003550@ds.study.iitm.ac.in">23f2003550@ds.study.iitm.ac.in</a></small>
+                </p>
+                <aside class="notes">
+                    Welcome, everyone. Thank you for joining. Today, we'll be discussing our strong performance in the third quarter of 2025 and our strategic initiatives moving forward.
+                </aside>
             </section>
 
             <section data-markdown>
-                <textarea data-template>
-                    ## Q3 Financial Highlights
-                    A strong quarter demonstrating significant growth.
+                <script type="text/template">
+                    ## Q3 2025: Financial Highlights
+                    A quarter of significant growth and market expansion.
 
-                    - **Revenue:** $5.2 Billion (+15% YoY)
-                    - **Net Income:** $1.1 Billion (+22% YoY)
-                    - **Earnings Per Share (EPS):** $2.45 (+25% YoY)
-                </textarea>
+                    * **Total Revenue:** \$4.2 Billion (+15% YoY)
+                    * **Net Income:** \$980 Million (+18% YoY)
+                    * **Earnings Per Share (EPS):** \$2.15 (+20% YoY)
+                    * **New Customer Acquisition:** 1.2 Million globally
+                </script>
+                <aside class="notes">
+                    As you can see, we've had another quarter of robust, double-digit growth across all key metrics. Our revenue increase was primarily driven by the successful launch of our new wealth management platform.
+                </aside>
             </section>
 
             <section>
-                <h2>Key Performance Metrics</h2>
-                <p>Our Earnings Per Share (EPS) calculation reflects robust profitability:</p>
-                <p>
-                    \[ EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Shares Outstanding}} \]
-                </p>
-                <p>This metric is crucial for evaluating our per-share profitability for stakeholders.</p>
+                <h2>Revenue Sources Breakdown</h2>
+                <ul>
+                    <li class="fragment">Digital Banking Solutions: <strong>45%</strong></li>
+                    <li class="fragment">Wealth Management Platform: <strong>30%</strong></li>
+                    <li class="fragment">Transactional & Service Fees: <strong>15%</strong></li>
+                    <li class="fragment">Enterprise & B2B Solutions: <strong>10%</strong></li>
+                </ul>
+                <aside class="notes">
+                    Let's break down where this revenue came from.
+                    - First, our core Digital Banking Solutions continue to be our largest contributor.
+                    - Next, the new Wealth Management Platform has already captured a significant share.
+                    - Transactional fees remain a steady source of income.
+                    - And finally, our B2B solutions show promising growth.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Tech Initiative: AI-Powered Risk Model</h2>
+                <p>A simplified Python snippet of our new predictive model.</p>
+                <pre><code class="language-python" data-trim data-noescape>
+                    import pandas as pd
+                    from sklearn.ensemble import RandomForestClassifier
+
+                    def calculate_credit_risk(customer_data: pd.DataFrame) -> dict:
+                        """
+                        Predicts credit risk using our proprietary AI model.
+                        """
+                        model = RandomForestClassifier(n_estimators=100, random_state=42)
+                        
+                        # Assuming model is pre-trained
+                        # model.fit(X_train, y_train) 
+                        
+                        predictions = model.predict_proba(customer_data)
+                        risk_score = predictions[:, 1] # Probability of default
+                        
+                        return {"customer_id": customer_data.index[0], "risk_score": risk_score[0]}
+
+                </code></pre>
+                <aside class="notes">
+                    A key driver of our margin improvement has been our investment in technology. Here’s a simplified look at the Python model our data science team uses for real-time credit risk assessment. This has reduced our default rate by 7% this quarter alone.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Growth Metric: CAGR Formula</h2>
+                <p>We use the Compound Annual Growth Rate (CAGR) to evaluate long-term performance:</p>
+                $$ CAGR = \left( \frac{V_{\text{final}}}{V_{\text{initial}}} \right)^{\frac{1}{t}} - 1 $$
+                <p>Where:</p>
+                <ul>
+                    <li>$V_{\text{final}}$: Ending Value</li>
+                    <li>$V_{\text{initial}}$: Beginning Value</li>
+                    <li>$t$: Number of time periods (years)</li>
+                </ul>
+                <aside class="notes">
+                    To put our long-term growth into perspective, we consistently track our CAGR. This formula helps us smooth out market volatility and understand the true, compounded growth rate over time. Our 5-year revenue CAGR stands at an impressive 14.5%.
+                </aside>
             </section>
             
             <section>
-                <h2>Technical Analysis Script</h2>
-                <p>Python script used for trend analysis this quarter.</p>
-                <pre><code class="python" data-line-numbers="1-2|4-5|7-9">
-import pandas as pd
-import yfinance as yf
-
-# Fetch quarterly stock data for ACME
-acme_ticker = yf.Ticker("ACME")
-q3_data = acme_ticker.history(period="3mo")
-
-# Calculate 50-day moving average
-q3_data['MA50'] = q3_data['Close'].rolling(window=50).mean()
-print(q3_data.tail())
-                </code></pre>
-            </section>
-
-            <section>
-                <h2>Forward Outlook</h2>
-                <p>We are optimistic about Q4 and the upcoming fiscal year.</p>
-                <ul>
-                    <li>Focus on expanding into emerging markets.</li>
-                    <li>Investment in AI-driven analytics.</li>
-                    <li>Continued commitment to shareholder value.</li>
-                </ul>
+                <h2>Thank You</h2>
+                <h3>Q&A</h3>
+                <p>For follow-up inquiries, please contact:</p>
+                <p><a href="mailto:23f2003550@ds.study.iitm.ac.in">23f2003550@ds.study.iitm.ac.in</a></p>
                 <aside class="notes">
-                    Good morning everyone. On this slide, I want to emphasize our forward-looking strategy.
-                    First, highlight the aggressive but strategic plan for market expansion.
-                    Second, mention the specific amount of capital allocated to our new AI initiatives.
-                    Finally, reassure stakeholders that our core mission remains to maximize their returns.
+                    That concludes the formal presentation. I'd now like to open the floor for any questions you may have.
                 </aside>
             </section>
 
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.js"></script>
     <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
         Reveal.initialize({
             hash: true,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
-            // Other configuration options
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-            transition: 'convex', // 'slide', 'fade', 'zoom', etc.
+            // Configure plugins
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
         });
     </script>
 </body>
